@@ -1,0 +1,18 @@
+/* You can put variables here to overide the variables defined in the src/sass folder,
+    this will allow user to customize the library
+
+    @description:
+        !default - (sass feature) ==>
+        @description:
+            You can assign to variables if they aren’t already assigned by adding the !default flag to the end 
+            of the value. This means that if the variable has already been assigned to, it won’t be re-assigned, 
+            but if it doesn’t have a value yet, it will be given one.
+
+            check the path src/sass/abstracts/variables/_colors.scss with "//theme colors" comment
+            
+            This is what it looks like: $example: 'value' !default;
+            Video link: https://www.youtube.com/watch?v=btMR5e4ZRM4
+            Document link: https://thoughtbot.com/blog/sass-default
+   ========================================================================== */
+
+@import 'src/sass/main.scss'
