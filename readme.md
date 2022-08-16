@@ -45,4 +45,4 @@
         header.html
         
         
-CLICK: raw tab for better view of folder structure
+CLICK: readMe.md file then click raw tab for better view of folder structure
