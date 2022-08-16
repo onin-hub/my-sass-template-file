@@ -45,4 +45,4 @@
         header.html
         
         
-CLICK: raw tab to for better view of folder structure
+CLICK: raw tab for better view of folder structure
