@@ -10,3 +10,36 @@
 
 =====NOTE=====
 1. remove the _sand.scss file and remove the @import 'sand'; in src/sass/main.scss this is only for testing purpose file.
+
+=====FOLDER STRUCTURE=====
+/public
+    /dist
+        /css
+            main.css
+/sass
+    main.css
+/src
+    /js
+        /components
+        /helper
+        /layout
+        /pages
+        /vendors
+    /sass
+        /abstracts
+        /components
+        /core
+        /helpers
+        /layout
+        /pages
+        /sections
+        /typography
+        /vendors
+        _sand.scss - (for test only you can delete this file)
+        main.scss
+/views
+    /layout
+    /pages
+    /partials
+        footer.html
+        header.html
