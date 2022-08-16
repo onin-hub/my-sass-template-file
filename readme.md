@@ -43,3 +43,6 @@
     /partials
         footer.html
         header.html
+        
+        
+CLICK: raw tab to for better view of folder structure
