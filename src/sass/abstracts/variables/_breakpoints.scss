@@ -14,6 +14,7 @@ $breakpoints: (
 @mixin xs {
   @media (min-width: map-get($breakpoints, "xs")) {
     @content;
+    @debug 'content IN xs::'$breakpoints;
   }
 }
 
@@ -54,23 +55,23 @@ $breakpoints: (
  * the following code below and use it to the /views/index.html or any other file if you like.
  */
 
-// .responsive-test {
-//   @include xs {
-//     color: red;
-//   }
-//   @include sm {
-//     color: blue;
-//   }
-//   @include md {
-//     color: green;
-//   }
-//   @include lg {
-//     color: purple;
-//   }
-//   @include xl {
-//     color: orange;
-//   }
-//   @include breakpoint(1536px) {
-//     color: pink;
-//   }
-// }
+.responsive-change-color-test {
+  @include xs {
+    color: red;
+  }
+  @include sm {
+    color: blue;
+  }
+  @include md {
+    color: green;
+  }
+  @include lg {
+    color: purple;
+  }
+  @include xl {
+    color: orange;
+  }
+  @include breakpoint(1536px) {
+    color: pink;
+  }
+}

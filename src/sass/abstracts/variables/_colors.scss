@@ -46,9 +46,10 @@ $colors: (
     background-color: $value;
   }
 
-  // light variations of $colors
+  // light variations
   @for $i from 1 through 9 {
     .text-#{$key}-light-#{$i} {
+      // @debug "text: #{$key}-light-#{$i}";
       color: mix(white, $value, $i * 10);
     }
   }
