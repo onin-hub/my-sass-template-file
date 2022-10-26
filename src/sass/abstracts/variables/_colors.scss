@@ -40,23 +40,28 @@ $colors: (
   // @debug "key: #{$key} == value: #{$value}";
 
   .text-#{$key} {
+    // @debug '.text-'$key;
     color: $value;
   }
   .bg-#{$key} {
+    // @debug '.bg-'$key;
     background-color: $value;
   }
 
   // light variations
   @for $i from 1 through 9 {
     .text-#{$key}-light-#{$i} {
-      // @debug "text: #{$key}-light-#{$i}";
+      // @debug ".text-#{$key}-light-#{$i}";
+      // @debug 'color:' mix(white, $value, $i * 10) #{$i};
       color: mix(white, $value, $i * 10);
+      // @debug $value;
     }
   }
 
     // dark variations
     @for $i from 1 through 9 {
       .text-#{$key}-dark-#{$i} {
+        // @debug ".text-#{$key}-dark-#{$i}";
         color: mix(black, $value, $i * 10);
       }
       .bg-#{$key}-dark-#{$i} {
