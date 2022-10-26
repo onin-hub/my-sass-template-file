@@ -127,7 +127,7 @@ $utilities: (
   ),
 
   "opacity": (
-    "prefix": "o",
+    "prefix": "opacity",
     "values": (
       "10": 0.1,
       "20": 0.2,
@@ -140,7 +140,7 @@ $utilities: (
       "90": 0.9,
       "100": 1,
     ),
-    // generated class: o-10, o-20, o-30, o-40, o-50, o-60, o-70, o-80, o-90, o-100
+    // generated class: opacity-10, opacity-20, opacity-30, opacity-40, opacity-50, opacity-60, opacity-70, opacity-80, opacity-90, opacity-100
   ),
   "border-radius": (
     "prefix": "br",
@@ -180,9 +180,16 @@ $utilities: (
 
 // generate utility classes
 @each $property, $map in $utilities {
+  // @debug 'property,:::' $property,;
+  // @debug 'map:::' $map;
+
+  // @debug 'property:::' $property;
   $prefix: map-get($map, "prefix");
   $values: map-get($map, "values");
-  
+
+  // @debug 'prefix:::'$prefix;
+  // @debug 'values:::' $values;
+
   @each $k, $v in $values {
     @if($k == "default") {
       .#{$prefix} {
@@ -195,3 +202,26 @@ $utilities: (
     }
   }
 }
+
+
+/**========================================
+  way yo destructure in sass
+=========================================*/
+
+// $icons:
+//   "eye" "\f112" 12px,
+//   "start" "\f12e" 16px,
+//   "stop" "\f12f" 10px;
+
+// @each $name, $size in $icons {
+//   @debug "name:" $name;
+//   @debug "glyph:" $glyph;
+//   @debug "size:" $size;
+  
+//   .icon-#{$name}:before {
+//     display: inline-block;
+//     font-family: "Icon Font";
+//     content: $glyph;
+//     font-size: $size;
+//   }
+// }
