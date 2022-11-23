@@ -37,8 +37,8 @@
   background-color: #326dee;
 }
 
-.text-secondary {
-  color: #1ac888;
+.text-secondary-light-5 {
+  color: #8de4c4;
 }
 
 .text-error {
@@ -89,6 +89,13 @@
 * THIS IS ONLY A SAMPLE YOU CAN CREATE YOUR OWN UTILITIES IF YOU WANT
 */
 
+.line-height-lg {
+  line-height: 2em;
+}
+
+/**========================================
+  way yo destructure in sass
+=========================================*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -267,22 +274,6 @@ h1 {
 /**
  * Add the correct display in IE 10.
  */
-
-.card {
-  display: block;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.card .card-title {
-  font-size: 1rem;
-  padding-bottom: 0.75rem;
-  font-weight: bold;
-}
-.card .card-body {
-  font-size: 1rem;
-}
 
 .container {
   width: 100%;
